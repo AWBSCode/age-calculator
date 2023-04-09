@@ -1,0 +1,139 @@
+/* Remove basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::focus {
+    outline: line;
+}
+
+/* Edit background color and center the main box */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: hsl(0, 0%, 94%);
+}
+
+/* main box */
+
+main {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+
+main .inputs {
+    display: flex;
+    gap: 20px;
+    padding: 30px 25px;
+}
+
+main .inputs .inp label {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+main .inputs .inp input {
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 86%);
+    padding: 20px;
+    font-size: 25px;
+    transition: 0.5s
+}
+
+main .inputs .inp input::placeholder {
+    color: hsl(0, 1%, 44%);
+}
+
+main .inputs .inp input:focus {
+    border-color: hsl(259, 100%, 65%);
+}
+
+main .line {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    left: 50%;
+    align-items: center;
+    transform: translateX(-50%);
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+/* main button */
+main .line .calc {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .line .calc:hover {
+    background-color: black;
+}
+
+main .line .calc img {
+    width: 35px;
+}
+
+main .line hr {
+    position: absolute;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+/* Remove spins */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Result */
+
+.result {
+    margin-left: 50px;
+}
+
+.result h1 {
+    font-size: 50px;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+}
+
+.result h1 span {
+    color: hsl(259, 100%, 65%);
+}
+
+/* Errors */
+.required {
+    color: hsl(0, 100%, 67%) ;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.invalid {
+    color: hsl(0, 100%, 67%);
+}

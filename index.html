@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="inputs">
+      <div class="inp">
+        <label for="day">Day</label>
+        <br>
+        <input type="number" id="day" placeholder="DD">
+        <br>
+        <p class="required"></p>
+      </div>
+      <div class="inp">
+        <label for="month">Month</label>
+        <br>
+        <input type="number" id="month" placeholder="MM">
+        <br>
+        <p class="required"></p>
+      </div>
+      <div class="inp">
+        <label for="year">Year</label>
+        <br>
+        <input type="number" id="year" placeholder="YYYY">
+        <br>
+        <p class="required"></p>
+      </div>
+    </div>
+
+    <div class="line">
+      <button class="calc">
+        <img src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+      <hr>
+    </div>
+
+    <div class="result">
+      <h1><span class="year">--</span> years</h1>
+      <h1><span class="month">--</span> months</h1>
+      <h1><span class="day">--</span> days</h1>
+    </div>
+  </main>
+
+  <script type="module" src="./calc.js"></script>
+</body>
+</html>

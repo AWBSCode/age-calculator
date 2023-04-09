@@ -1,0 +1,48 @@
+@media (max-width: 1000px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 745px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 95%;
+    }
+}
+
+@media (max-width: 550px) {
+    main .inputs {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 530px) {
+    main .inputs .inp input {
+        width: 70px;
+    }
+
+    main .line .calc {
+        position: relative;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 430px) {
+    main .inputs .inp input {
+        width: 55px;
+        font-size: 20px;
+    }
+}
